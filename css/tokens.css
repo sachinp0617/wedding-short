@@ -1,0 +1,51 @@
+:root {
+  /* ── Core palette (Sarah & James inspired) ── */
+  --cream:       #faf8f4;         /* page background */
+  --white:       #ffffff;
+  --paper:       #f2ebe0;         /* warm paper tone */
+
+  --dark:        #1a1005;         /* footer / darkest bg */
+  --dark-mid:    #2a1f15;         /* body text */
+
+  --gold:        #c9a851;         /* accent */
+  --gold-mid:    #b8942e;
+  --gold-light:  #e8d5a3;
+
+  --sage:        #c8d9b0;         /* countdown section bg */
+  --sage-mid:    #a4c585;
+
+  --muted:       #7a6a5a;         /* secondary text */
+  --border:      rgba(42, 31, 21, 0.10);
+  --border-dark: rgba(255, 255, 255, 0.12);
+
+  /* ── Typography ── */
+  --font-display: "Cormorant Garamond", Georgia, serif;
+  --font-script:  "Great Vibes", cursive;
+  --font-sans:    "DM Sans", system-ui, -apple-system, sans-serif;
+
+  /* ── Spacing ── */
+  --space-xs:  0.5rem;
+  --space-sm:  0.75rem;
+  --space-md:  1.25rem;
+  --space-lg:  2rem;
+  --space-xl:  3rem;
+  --space-2xl: 5rem;
+
+  /* ── Radii ── */
+  --radius-sm: 0.4rem;
+  --radius-md: 0.75rem;
+  --radius-lg: 1.25rem;
+  --radius-pill: 100px;
+
+  /* ── Shadows ── */
+  --shadow-sm:   0 2px 8px  rgba(42, 31, 21, 0.08);
+  --shadow-md:   0 8px 32px rgba(42, 31, 21, 0.10);
+  --shadow-lg:   0 20px 60px rgba(26, 16, 5, 0.18);
+
+  /* ── Layout ── */
+  --content-max:      680px;
+  --tap-min:          44px;
+  --safe-bottom:      env(safe-area-inset-bottom, 0px);
+  --safe-top:         env(safe-area-inset-top, 0px);
+  --nav-height:       64px;
+}

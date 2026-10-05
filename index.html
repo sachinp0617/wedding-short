@@ -1,0 +1,234 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+    <meta name="description" content="" id="meta-description" />
+    <meta name="theme-color" content="#1a1005" />
+    <title id="page-title">Wedding Invitation</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:ital,wght@0,300;0,400;0,500;1,300;1,400;1,500&family=DM+Sans:wght@300;400;500;600&family=Great+Vibes&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="css/tokens.css" />
+    <link rel="stylesheet" href="css/base.css" />
+    <link rel="stylesheet" href="css/components.css" />
+    <link rel="stylesheet" href="css/animations.css" />
+  </head>
+  <body>
+
+    <!-- ── Opening reveal ───────────────────────────────── -->
+    <div class="intro-overlay" id="intro-overlay" aria-hidden="false">
+      <div class="intro-photo" id="intro-photo" aria-hidden="true"></div>
+      <div class="intro-veil" aria-hidden="true"></div>
+      <div class="intro-center">
+        <p class="intro-script" id="intro-script"></p>
+        <h1 class="intro-names">
+          <span class="intro-name" id="intro-groom"></span>
+          <span class="intro-amp">&amp;</span>
+          <span class="intro-name" id="intro-bride"></span>
+        </h1>
+        <p class="intro-hint">Tap to enter</p>
+      </div>
+      <div class="intro-foot">
+        <p class="intro-date" id="intro-date"></p>
+        <p class="intro-venue" id="intro-venue"></p>
+        <button type="button" class="intro-enter" id="intro-enter">Open invitation</button>
+      </div>
+    </div>
+
+    <!-- ── Top Navigation ───────────────────────────────── -->
+    <nav class="site-nav" id="site-nav" aria-label="Main navigation">
+      <a href="#home" class="nav-monogram" id="nav-monogram" aria-label="Back to top"></a>
+      <ul class="nav-links" role="list">
+        <li><a href="#schedule">Schedule</a></li>
+        <li><a href="#rsvp">RSVP</a></li>
+        <li><a href="#closing">Countdown</a></li>
+      </ul>
+    </nav>
+
+    <!-- ── Motion curtain (opens after intro) ──────────── -->
+    <div class="curtain-pin" id="home">
+      <section class="curtain-scene" id="journey" aria-labelledby="journey-heading">
+        <div class="curtain-photo" id="journey-photo" aria-hidden="true"></div>
+        <div class="curtain-glow" aria-hidden="true"></div>
+        <div class="curtain-caption" id="curtain-caption">
+          <h2 class="curtain-invite" id="journey-heading"></h2>
+        </div>
+        <button type="button" class="curtain-hint" id="curtain-hint">
+          Scroll to continue
+          <span class="curtain-hint__arrow" aria-hidden="true">↓</span>
+        </button>
+      </section>
+    </div>
+
+    <!-- ── Section 3: Filmstrip story ─────────────────── -->
+    <section class="filmstrip-section" id="story" aria-labelledby="story-title">
+      <div class="filmstrip-sticky">
+        <div class="filmstrip-left reveal-up">
+          <span class="section-eyebrow" id="story-eyebrow"></span>
+          <h2 class="filmstrip-title" id="story-title"></h2>
+        </div>
+        <div class="filmstrip-right">
+          <div class="film-holes film-holes--top" aria-hidden="true" id="film-holes-top"></div>
+          <div class="filmstrip-viewport">
+            <div class="filmstrip-track" id="filmstrip-track"></div>
+          </div>
+          <div class="film-holes film-holes--bottom" aria-hidden="true" id="film-holes-bottom"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 4: RSVP ────────────────────────────── -->
+    <section class="rsvp-section" id="rsvp" aria-labelledby="rsvp-heading">
+      <div class="rsvp-photo-layer" id="rsvp-photo" aria-hidden="true"></div>
+      <div class="blob blob-1" aria-hidden="true"></div>
+      <div class="blob blob-2" aria-hidden="true"></div>
+      <div class="blob blob-3" aria-hidden="true"></div>
+      <img class="rsvp-bouquet" id="rsvp-bouquet" alt="" aria-hidden="true" />
+      <div class="rsvp-inner rsvp-glass-card reveal-up">
+        <span class="section-eyebrow" id="rsvp-eyebrow"></span>
+        <h2 class="rsvp-heading" id="rsvp-heading"></h2>
+        <p class="rsvp-deadline">Kindly respond by <strong id="rsvp-deadline"></strong></p>
+
+        <form class="rsvp-form" id="rsvp-form" novalidate autocomplete="off">
+          <div class="rsvp-row">
+            <div class="rsvp-field">
+              <label class="rsvp-label" for="rf-first">First Name</label>
+              <input class="rsvp-input" type="text" id="rf-first" name="first_name"
+                placeholder="Priya" required autocomplete="given-name" />
+            </div>
+            <div class="rsvp-field">
+              <label class="rsvp-label" for="rf-last">Last Name</label>
+              <input class="rsvp-input" type="text" id="rf-last" name="last_name"
+                placeholder="Sharma" autocomplete="family-name" />
+            </div>
+          </div>
+
+          <div class="rsvp-field">
+            <span class="rsvp-label">Will you attend?</span>
+            <div class="rsvp-toggles" role="group" aria-label="Attendance">
+              <button type="button" class="rsvp-toggle active" data-group="attend" data-value="yes">
+                Joyfully accepts
+              </button>
+              <button type="button" class="rsvp-toggle" data-group="attend" data-value="no">
+                Regretfully declines
+              </button>
+            </div>
+          </div>
+
+          <div class="rsvp-attend-extras" id="rsvp-attend-extras">
+            <div class="rsvp-field">
+              <span class="rsvp-label">Are you coming with someone?</span>
+              <div class="rsvp-toggles" role="group" aria-label="Plus one">
+                <button type="button" class="rsvp-toggle" data-group="plusone" data-value="yes">
+                  Yes, +1
+                </button>
+                <button type="button" class="rsvp-toggle active" data-group="plusone" data-value="no">
+                  Just me
+                </button>
+              </div>
+            </div>
+
+            <div class="rsvp-field" id="rf-plusone-wrap" hidden>
+              <label class="rsvp-label" for="rf-plusone-name">+1 Name</label>
+              <input class="rsvp-input" type="text" id="rf-plusone-name" name="plusone_name"
+                placeholder="Guest name" autocomplete="off" />
+            </div>
+
+            <div class="rsvp-field">
+              <label class="rsvp-label" for="rf-arrival">When do you arrive in Bidar?</label>
+              <input class="rsvp-input" type="date" id="rf-arrival" name="arrival"
+                min="2026-11-10" max="2026-11-16" />
+            </div>
+          </div>
+
+          <div class="rsvp-blessing">
+            <p class="rsvp-blessing__script" id="rsvp-wish-script"></p>
+            <p class="rsvp-blessing__hint" id="rsvp-wish-hint"></p>
+            <label class="sr-only" for="rf-wishes">A blessing for Sachin and Lavanya</label>
+            <textarea class="rsvp-input rsvp-textarea" id="rf-wishes" name="wishes"
+              rows="4" maxlength="400"></textarea>
+          </div>
+
+          <button type="submit" class="btn-rsvp-submit" id="rsvp-submit-btn">Send RSVP</button>
+        </form>
+
+        <div class="rsvp-success" id="rsvp-success" hidden aria-live="polite" role="status">
+          <div class="rsvp-success__check" aria-hidden="true">&#10003;</div>
+          <p class="rsvp-success__badge">RSVP received</p>
+          <h3 class="rsvp-success__name" id="rsvp-success-name">Thank you</h3>
+          <p class="rsvp-success__sub" id="rsvp-success-sub">We have received your reply.</p>
+          <p class="rsvp-success__detail" id="rsvp-success-detail"></p>
+        </div>
+
+        <div class="rsvp-wishes-wall" id="rsvp-wishes-wall" hidden>
+          <p class="rsvp-wishes-wall__label">Blessings from guests</p>
+          <div class="rsvp-wishes-wall__list" id="rsvp-wishes-list"></div>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Section 5: Schedule ────────────────────────── -->
+    <section class="schedule-section" id="schedule" aria-labelledby="schedule-heading">
+      <div class="schedule-header container reveal-up">
+        <span class="section-eyebrow" id="schedule-eyebrow"></span>
+        <h2 class="schedule-heading" id="schedule-heading"></h2>
+        <div class="diamond-divider" aria-hidden="true">&#9670;</div>
+      </div>
+
+      <div class="schedule-body container">
+        <div class="schedule-left">
+          <p class="timeline-eyebrow">Order of Celebration</p>
+          <ol class="timeline" id="timeline" aria-label="Event schedule"></ol>
+        </div>
+      </div>
+    </section>
+
+    <!-- ── Closing: photo + Countdown ─────────────────── -->
+    <section class="closing-band" id="closing" aria-labelledby="cd-heading">
+      <div class="closing-band__photo" id="closing-photo" aria-hidden="true"></div>
+      <div class="closing-band__veil" aria-hidden="true"></div>
+      <div class="closing-band__content reveal-up">
+        <div class="closing-band__countdown" id="countdown">
+          <h2 class="cd-heading" id="cd-heading"></h2>
+          <p class="cd-meta" id="cd-meta"></p>
+          <div class="cd-display" id="cd-display" aria-live="polite" aria-atomic="true">
+            <div class="cd-unit">
+              <span class="cd-val" id="cd-days">---</span>
+              <span class="cd-lbl">Days</span>
+            </div>
+            <span class="cd-sep" aria-hidden="true">:</span>
+            <div class="cd-unit">
+              <span class="cd-val" id="cd-hours">00</span>
+              <span class="cd-lbl">Hours</span>
+            </div>
+            <span class="cd-sep" aria-hidden="true">:</span>
+            <div class="cd-unit">
+              <span class="cd-val" id="cd-mins">00</span>
+              <span class="cd-lbl">Minutes</span>
+            </div>
+            <span class="cd-sep" aria-hidden="true">:</span>
+            <div class="cd-unit">
+              <span class="cd-val" id="cd-secs">00</span>
+              <span class="cd-lbl">Seconds</span>
+            </div>
+          </div>
+          <div class="cd-today" id="cd-today" hidden>
+            <p>Today is the Day! &#127881;</p>
+          </div>
+        </div>
+
+        <a class="closing-band__cta" href="#rsvp" id="closing-cta"></a>
+      </div>
+    </section>
+
+    <button type="button" id="music-toggle" class="music-toggle" aria-label="Play music" aria-pressed="false">
+      &#x1F507;
+    </button>
+
+    <script type="module" src="js/main.js"></script>
+  </body>
+</html>

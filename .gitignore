@@ -1,0 +1,13 @@
+.DS_Store
+Thumbs.db
+*.log
+.env
+.env.*
+.vscode/
+.idea/
+.netlify/
+.cursor/
+__pycache__/
+*.pyc
+.venv/
+node_modules/
