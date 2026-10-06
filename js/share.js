@@ -46,7 +46,7 @@ export function initShare() {
       if (navigator.share) {
         try {
           await navigator.share({
-            title: `${WEDDING.couple.bride} & ${WEDDING.couple.groom} — Wedding Invitation`,
+            title: `${WEDDING.couple.bride} & ${WEDDING.couple.groom} — Reception Invitation`,
             text: WEDDING.share.message,
             url,
           });
@@ -138,5 +138,5 @@ export function renderStaticContent() {
     travelList.innerHTML = travel.tips.map((tip) => `<li>${tip}</li>`).join("");
   }
 
-  document.title = `${couple.bride} & ${couple.groom} — Wedding Invitation`;
+  document.title = `${couple.bride} & ${couple.groom} — Reception Invitation`;
 }

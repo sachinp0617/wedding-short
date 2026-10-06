@@ -9,7 +9,7 @@ export function initGuestGreeting() {
 
   if (guest && guest.trim()) {
     const name = decodeURIComponent(guest.trim());
-    el.textContent = `Dear ${name}, you are warmly invited to celebrate with us`;
+    el.textContent = `Dear ${name}, you are warmly invited to our reception`;
     el.hidden = false;
   } else {
     el.hidden = true;

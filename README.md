@@ -1,6 +1,6 @@
-# Sachin & Lavanya — Wedding Invitation Website
+# Sachin & Lavanya — Reception Invitation Website
 
-A mobile-first wedding invitation site. Edit **`js/config.js`** only — everything else is filled from that file.
+A mobile-first reception invitation site. Edit **`js/config.js`** only — everything else is filled from that file.
 
 ## Features
 

@@ -30,12 +30,12 @@ function applyConfig() {
   const names = coupleLine();
   const place = `${muhurtham.venue} · ${city}`;
 
-  document.title = `${couple.groom} & ${couple.bride} — Wedding Invitation`;
+  document.title = `${couple.groom} & ${couple.bride} — Reception Invitation`;
   const meta = document.getElementById("meta-description");
   if (meta) {
     meta.setAttribute(
       "content",
-      `Wedding invitation for ${names} — ${muhurtham.displayDate}, ${city}`
+      `Reception invitation for ${names} — ${muhurtham.displayDate}, ${city}`
     );
   }
 
@@ -274,7 +274,7 @@ function initGuestGreetingLocal() {
   const params = new URLSearchParams(window.location.search);
   const guest = params.get("guest");
   if (guest && inviteEl) {
-    inviteEl.innerHTML = `Dear ${guest}, we cordially invite you<br />to our wedding`;
+    inviteEl.innerHTML = `Dear ${guest}, we cordially invite you<br />to our reception`;
   }
 }
 

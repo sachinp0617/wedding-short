@@ -151,8 +151,8 @@ export function initRsvpForm() {
       subEl.textContent =
         attending === "yes"
           ? notes
-            ? "Your RSVP and blessing are with us. We cannot wait to celebrate with you."
-            : "Your RSVP is confirmed. We cannot wait to celebrate with you."
+            ? "Your RSVP and blessing are with us. We cannot wait to celebrate with you at the reception."
+            : "Your RSVP is confirmed. We cannot wait to celebrate with you at the reception."
           : notes
             ? "Your reply and blessing are with us. Thank you for letting us know."
             : "Your reply is confirmed. Thank you for letting us know.";

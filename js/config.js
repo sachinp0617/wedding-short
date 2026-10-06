@@ -22,11 +22,11 @@ export const WEDDING = {
   
 
   blessing:
-    "May the bond of love between you two grow stronger with each passing day.",
-  tagline: "Together, we begin our forever.",
-  heroScript: "We're getting married",
+    "May your evening with us be filled with joy, laughter, and warm wishes.",
+  tagline: "Celebrate with us at our reception.",
+  heroScript: "Join us for our reception",
   journeyHeading: "We cordially invite you",
-  journeyHeadingLine2: "to our wedding",
+  journeyHeadingLine2: "to our reception",
   storyEyebrow: "Our Story",
   storyTitle: "Five Moments",
   storyTitleEm: "That Found Us",
@@ -36,13 +36,13 @@ export const WEDDING = {
   rsvpDeadline: "20 October 2026",
   rsvpWishScript: "A blessing, if you will",
   rsvpWishHint:
-    "A few kind words we will carry with us into our forever — laughter, a prayer, or a wish for our home.",
+    "A few kind words we will carry with us — laughter, a prayer, or a wish for our home.",
   rsvpWishPlaceholder:
     "May your days be gentle, and your home always full of light…",
-  scheduleEyebrow: "The Big Day",
-  scheduleHeading: "Order of",
-  scheduleHeadingEm: "Celebrations",
-  countdownHeading: "The Big Day is",
+  scheduleEyebrow: "The Evening",
+  scheduleHeading: "The",
+  scheduleHeadingEm: "Reception",
+  countdownHeading: "The Reception is",
   countdownHeadingEm: "Almost Here",
   closingCta: "RSVP before you forget",
 
@@ -62,12 +62,12 @@ export const WEDDING = {
 
   muhurtham: {
     date: "2026-11-15",
-    time: "09:30",
+    time: "19:00",
     timezone: "Asia/Kolkata",
     displayDate: "15 November 2026",
     /** Short form for hero / footer lines */
     displayDateShort: "November 15, 2026",
-    displayTime: "9:30 AM",
+    displayTime: "7:00 PM",
     /** Day number + month abbrev for the date ring */
     day: "15",
     monthShort: "NOV",
@@ -78,25 +78,11 @@ export const WEDDING = {
     addressLines: "Jira Convention Center\nOuter Ring Road, Nawadgeri\nBidar, Karnataka 585401",
     mapsUrl:
       "https://www.google.com/maps/place/Jhira+Convention+Hall/@17.9260779,77.5148632,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcec72abe493f53:0x3fc6e1d7dcda29df!8m2!3d17.9260779!4d77.5174381!16s%2Fg%2F1thmjg4s?entry=ttu&g_ep=EgoyMDI2MDgxMC4wIKXMDSoASAFQAw%3D%3D",
-    durationHours: 3,
+    durationHours: 4,
   },
 
   events: [
 
-    {
-      id: "ceremony",
-      title: "Wedding Ceremony",
-      date: "2026-11-15",
-      time: "09:30",
-      displayDate: "15 November 2026",
-      displayTime: "Muhurtham at 09:30 AM",
-      venue: "Jira Convention Center",
-      address: "Outer Ring Road, Nawadgeri, Bidar, Karnataka 585401",
-      dressNote: "Traditional South Indian attire in maroon, gold, or ivory",
-      mapsUrl:
-        "https://www.google.com/maps/place/Jhira+Convention+Hall/@17.9260779,77.5148632,17z/data=!3m1!4b1!4m6!3m5!1s0x3bcec72abe493f53:0x3fc6e1d7dcda29df!8m2!3d17.9260779!4d77.5174381!16s%2Fg%2F1thmjg4s?entry=ttu&g_ep=EgoyMDI2MDgxMC4wIKXMDSoASAFQAw%3D%3D",
-      durationHours: 3,
-    },
     {
       id: "reception",
       title: "Reception",
@@ -146,15 +132,15 @@ export const WEDDING = {
     {
       num: "05",
       year: "15 November 2026",
-      title: "Forever Begins",
-      text: "This is the date we have been counting toward. Come bless us with your presence as we begin forever, together.",
+      title: "The Reception",
+      text: "Join us that evening as we celebrate with family and friends. Your presence at our reception will make the night complete.",
       img: "assets/images/preview-2.jpg",
     },
   ],
 
   dressCode: {
     title: "Dress Code",
-    text: "We invite you to dress in festive traditional or elegant formal wear.",
+    text: "We invite you to dress in festive traditional or elegant formal wear for the reception.",
     palette: "Suggested palette: maroon, gold, and ivory.",
   },
 
@@ -188,7 +174,7 @@ export const WEDDING = {
 
   share: {
     message:
-      "You are warmly invited to the wedding of Sachin & Lavanya! View our invitation:",
+      "You are warmly invited to the reception of Sachin & Lavanya! View our invitation:",
   },
 
   audio: {

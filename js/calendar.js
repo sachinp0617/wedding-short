@@ -25,13 +25,13 @@ function buildICS(event) {
   const lines = [
     "BEGIN:VCALENDAR",
     "VERSION:2.0",
-    "PRODID:-//Wedding Invitation//EN",
+    "PRODID:-//Reception Invitation//EN",
     "BEGIN:VEVENT",
     `DTSTART:${formatICSDateLocal(start)}`,
     `DTEND:${formatICSDateLocal(end)}`,
     `SUMMARY:${event.title}`,
     `LOCATION:${event.venue}, ${event.address}`,
-    `DESCRIPTION:${event.title} - Wedding celebration`,
+    `DESCRIPTION:${event.title} - Reception celebration`,
     "END:VEVENT",
     "END:VCALENDAR",
   ];
@@ -46,7 +46,7 @@ export function initCalendar(events) {
       const event = events.find((e) => e.id === id);
       if (!event) return;
       const ics = buildICS(event);
-      downloadICS(`${event.id}-wedding.ics`, ics);
+      downloadICS(`${event.id}-reception.ics`, ics);
     });
   });
 }
